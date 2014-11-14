@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  qrReaderVC.h
 //  RusMuseum
 //
 //  Created by admin on 14.11.14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface qrReaderVC : UIViewController
 
 @end
-

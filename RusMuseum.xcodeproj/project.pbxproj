@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		84BB2D551A163DCD008C7E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D541A163DCD008C7E5E /* main.m */; };
 		84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D571A163DCD008C7E5E /* AppDelegate.m */; };
-		84BB2D5B1A163DCD008C7E5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D5A1A163DCD008C7E5E /* ViewController.m */; };
 		84BB2D5E1A163DCD008C7E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D5C1A163DCD008C7E5E /* Main.storyboard */; };
 		84BB2D601A163DCD008C7E5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D5F1A163DCD008C7E5E /* Images.xcassets */; };
 		84BB2D631A163DCD008C7E5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D611A163DCD008C7E5E /* LaunchScreen.xib */; };
 		84BB2D6F1A163DCD008C7E5E /* RusMuseumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D6E1A163DCD008C7E5E /* RusMuseumTests.m */; };
+		84BB2D7A1A164A0F008C7E5E /* StartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D791A164A0E008C7E5E /* StartVC.m */; };
+		84BB2D7E1A164E09008C7E5E /* NavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D7C1A164E09008C7E5E /* NavigationButton.m */; };
+		84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */; };
+		84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D831A166A46008C7E5E /* qrReaderVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,20 @@
 		84BB2D541A163DCD008C7E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84BB2D561A163DCD008C7E5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84BB2D571A163DCD008C7E5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84BB2D591A163DCD008C7E5E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84BB2D5A1A163DCD008C7E5E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84BB2D5D1A163DCD008C7E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BB2D5F1A163DCD008C7E5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84BB2D621A163DCD008C7E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84BB2D681A163DCD008C7E5E /* RusMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RusMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB2D6D1A163DCD008C7E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BB2D6E1A163DCD008C7E5E /* RusMuseumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RusMuseumTests.m; sourceTree = "<group>"; };
+		84BB2D781A164A0E008C7E5E /* StartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartVC.h; sourceTree = "<group>"; };
+		84BB2D791A164A0E008C7E5E /* StartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartVC.m; sourceTree = "<group>"; };
+		84BB2D7B1A164E09008C7E5E /* NavigationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationButton.h; sourceTree = "<group>"; };
+		84BB2D7C1A164E09008C7E5E /* NavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationButton.m; sourceTree = "<group>"; };
+		84BB2D7F1A1654A9008C7E5E /* ControllersForMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllersForMenu.h; sourceTree = "<group>"; };
+		84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllersForMenu.m; sourceTree = "<group>"; };
+		84BB2D821A166A46008C7E5E /* qrReaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrReaderVC.h; sourceTree = "<group>"; };
+		84BB2D831A166A46008C7E5E /* qrReaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrReaderVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +90,17 @@
 		84BB2D511A163DCD008C7E5E /* RusMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				84BB2D7B1A164E09008C7E5E /* NavigationButton.h */,
+				84BB2D7C1A164E09008C7E5E /* NavigationButton.m */,
+				84BB2D781A164A0E008C7E5E /* StartVC.h */,
+				84BB2D791A164A0E008C7E5E /* StartVC.m */,
+				84BB2D7F1A1654A9008C7E5E /* ControllersForMenu.h */,
+				84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */,
 				84BB2D561A163DCD008C7E5E /* AppDelegate.h */,
 				84BB2D571A163DCD008C7E5E /* AppDelegate.m */,
-				84BB2D591A163DCD008C7E5E /* ViewController.h */,
-				84BB2D5A1A163DCD008C7E5E /* ViewController.m */,
 				84BB2D5C1A163DCD008C7E5E /* Main.storyboard */,
+				84BB2D821A166A46008C7E5E /* qrReaderVC.h */,
+				84BB2D831A166A46008C7E5E /* qrReaderVC.m */,
 				84BB2D5F1A163DCD008C7E5E /* Images.xcassets */,
 				84BB2D611A163DCD008C7E5E /* LaunchScreen.xib */,
 				84BB2D521A163DCD008C7E5E /* Supporting Files */,
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BB2D5B1A163DCD008C7E5E /* ViewController.m in Sources */,
+				84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */,
 				84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */,
+				84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */,
+				84BB2D7E1A164E09008C7E5E /* NavigationButton.m in Sources */,
 				84BB2D551A163DCD008C7E5E /* main.m in Sources */,
+				84BB2D7A1A164A0F008C7E5E /* StartVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
