@@ -18,6 +18,8 @@
 		84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */; };
 		84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D831A166A46008C7E5E /* qrReaderVC.m */; };
 		84BB2D861A16755B008C7E5E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D851A16755B008C7E5E /* video.mp4 */; };
+		84EEC6D51A16A4F300E8CF5D /* sponsorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */; };
+		84EEC6D81A17886E00E8CF5D /* ChooseFloorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		84BB2D821A166A46008C7E5E /* qrReaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrReaderVC.h; sourceTree = "<group>"; };
 		84BB2D831A166A46008C7E5E /* qrReaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrReaderVC.m; sourceTree = "<group>"; };
 		84BB2D851A16755B008C7E5E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		84EEC6D31A16A4F300E8CF5D /* sponsorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorVC.h; sourceTree = "<group>"; };
+		84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorVC.m; sourceTree = "<group>"; };
+		84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseFloorVC.h; sourceTree = "<group>"; };
+		84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseFloorVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 				84BB2D791A164A0E008C7E5E /* StartVC.m */,
 				84BB2D7F1A1654A9008C7E5E /* ControllersForMenu.h */,
 				84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */,
+				84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */,
+				84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */,
+				84EEC6D31A16A4F300E8CF5D /* sponsorVC.h */,
+				84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */,
 				84BB2D561A163DCD008C7E5E /* AppDelegate.h */,
 				84BB2D571A163DCD008C7E5E /* AppDelegate.m */,
 				84BB2D5C1A163DCD008C7E5E /* Main.storyboard */,
@@ -239,10 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */,
+				84EEC6D51A16A4F300E8CF5D /* sponsorVC.m in Sources */,
 				84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */,
 				84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */,
 				84BB2D7E1A164E09008C7E5E /* NavigationButton.m in Sources */,
 				84BB2D551A163DCD008C7E5E /* main.m in Sources */,
+				84EEC6D81A17886E00E8CF5D /* ChooseFloorVC.m in Sources */,
 				84BB2D7A1A164A0F008C7E5E /* StartVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,9 +378,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RusMuseum/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -377,9 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RusMuseum/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -436,6 +450,7 @@
 				84BB2D741A163DCD008C7E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84BB2D751A163DCD008C7E5E /* Build configuration list for PBXNativeTarget "RusMuseumTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +459,7 @@
 				84BB2D771A163DCD008C7E5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

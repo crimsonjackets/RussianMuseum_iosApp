@@ -208,7 +208,7 @@
 
 - (void)sponsorButtonPressed:(UIButton *)sender {
     [self didTouchRMButton];
-//    [self.delegate sponsorButtonPressed];
+    [MenuControllers goSponsorVC];
 }
 
 @end
