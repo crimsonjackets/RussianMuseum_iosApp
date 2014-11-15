@@ -1,5 +1,5 @@
 //
-//  sponsorVC.h
+//  MapVC.h
 //  RusMuseum
 //
 //  Created by Max on 15/11/14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sponsorVC : UIViewController
+@interface MapVC : UIViewController
+@property(nonatomic) int currentFloor;
 
 @end

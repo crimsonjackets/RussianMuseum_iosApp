@@ -1,18 +1,18 @@
 //
-//  sponsorVC.m
+//  MapVC.m
 //  RusMuseum
 //
 //  Created by Max on 15/11/14.
 //  Copyright (c) 2014 crimsonjackets. All rights reserved.
 //
 
-#import "sponsorVC.h"
+#import "MapVC.h"
 
-@interface sponsorVC ()
+@interface MapVC ()
 
 @end
 
-@implementation sponsorVC
+@implementation MapVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

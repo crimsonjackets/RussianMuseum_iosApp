@@ -196,14 +196,10 @@
     [MenuControllers goQrReaderVC];
 }
 
-- (void)changeFloorButtonPressed:(UIButton *)sender {
-    [self didTouchRMButton];
-//    [self.delegate changeFloorButtonPressed];
-}
 
 - (void)mapButtonPressed:(UIButton *)sender {
     [self didTouchRMButton];
-//    [self.delegate mapButtonPressed];
+    [MenuControllers goChooseFloorVC];
 }
 
 - (void)sponsorButtonPressed:(UIButton *)sender {

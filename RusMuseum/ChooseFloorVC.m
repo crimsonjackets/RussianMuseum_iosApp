@@ -7,7 +7,7 @@
 //
 
 #import "ChooseFloorVC.h"
-
+#import "MapVC.h"
 @interface ChooseFloorVC ()
 
 @end
@@ -23,7 +23,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)goToMap:(UIButton *) sender{
+    NSLog(@"button tag = %ld", sender.tag);
+    MapVC * mapVC = [self.storyboard instantiateViewControllerWithIdentifier:@"mapVC"];
+    mapVC.currentFloor = (int)sender.tag;
+    [self.navigationController pushViewController:mapVC animated:YES];
+}
 /*
 #pragma mark - Navigation
 

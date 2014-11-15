@@ -18,8 +18,8 @@
 		84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */; };
 		84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D831A166A46008C7E5E /* qrReaderVC.m */; };
 		84BB2D861A16755B008C7E5E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D851A16755B008C7E5E /* video.mp4 */; };
-		84EEC6D51A16A4F300E8CF5D /* sponsorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */; };
 		84EEC6D81A17886E00E8CF5D /* ChooseFloorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */; };
+		84EEC6DE1A1798ED00E8CF5D /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6DD1A1798ED00E8CF5D /* MapVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		84BB2D821A166A46008C7E5E /* qrReaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrReaderVC.h; sourceTree = "<group>"; };
 		84BB2D831A166A46008C7E5E /* qrReaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrReaderVC.m; sourceTree = "<group>"; };
 		84BB2D851A16755B008C7E5E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
-		84EEC6D31A16A4F300E8CF5D /* sponsorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sponsorVC.h; sourceTree = "<group>"; };
-		84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sponsorVC.m; sourceTree = "<group>"; };
 		84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseFloorVC.h; sourceTree = "<group>"; };
 		84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseFloorVC.m; sourceTree = "<group>"; };
+		84EEC6DC1A1798ED00E8CF5D /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapVC.h; path = ../MapVC.h; sourceTree = "<group>"; };
+		84EEC6DD1A1798ED00E8CF5D /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,8 @@
 		84BB2D511A163DCD008C7E5E /* RusMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				84EEC6DC1A1798ED00E8CF5D /* MapVC.h */,
+				84EEC6DD1A1798ED00E8CF5D /* MapVC.m */,
 				84BB2D7B1A164E09008C7E5E /* NavigationButton.h */,
 				84BB2D7C1A164E09008C7E5E /* NavigationButton.m */,
 				84BB2D781A164A0E008C7E5E /* StartVC.h */,
@@ -106,8 +108,6 @@
 				84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */,
 				84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */,
 				84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */,
-				84EEC6D31A16A4F300E8CF5D /* sponsorVC.h */,
-				84EEC6D41A16A4F300E8CF5D /* sponsorVC.m */,
 				84BB2D561A163DCD008C7E5E /* AppDelegate.h */,
 				84BB2D571A163DCD008C7E5E /* AppDelegate.m */,
 				84BB2D5C1A163DCD008C7E5E /* Main.storyboard */,
@@ -249,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */,
-				84EEC6D51A16A4F300E8CF5D /* sponsorVC.m in Sources */,
+				84EEC6DE1A1798ED00E8CF5D /* MapVC.m in Sources */,
 				84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */,
 				84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */,
 				84BB2D7E1A164E09008C7E5E /* NavigationButton.m in Sources */,

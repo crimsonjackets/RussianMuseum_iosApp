@@ -22,7 +22,7 @@
         UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:bundle];
         _sharedObject.startVC = [storyboard instantiateViewControllerWithIdentifier:@"startVC"];
         _sharedObject.qrReaderVC = [storyboard instantiateViewControllerWithIdentifier:@"qrReaderVC"];
-//        _sharedObject.chooseFloorVC = [storyboard instantiateViewControllerWithIdentifier:@"chooseFloorVC"];
+        _sharedObject.chooseFloorVC = [storyboard instantiateViewControllerWithIdentifier:@"chooseFloorVC"];
         _sharedObject.sponsorVC = [storyboard instantiateViewControllerWithIdentifier:@"sponsorVC"];
     });
     
@@ -45,7 +45,9 @@
 }
 -(void) goChooseFloorVC{
     if (self.navigationController){
-        [self.navigationController pushViewController:self.startVC animated:YES];
+        if ([self.navigationController topViewController] != self.chooseFloorVC){
+            [self.navigationController setViewControllers:@[self.chooseFloorVC] animated:YES];
+        }
     }
 }
 -(void) goSponsorVC{
