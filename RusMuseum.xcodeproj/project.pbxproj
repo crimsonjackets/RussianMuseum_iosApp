@@ -19,6 +19,10 @@
 		84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */; };
 		84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D831A166A46008C7E5E /* qrReaderVC.m */; };
 		84BB2D861A16755B008C7E5E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D851A16755B008C7E5E /* video.mp4 */; };
+		84BB2D891A1A050D008C7E5E /* ExhibitData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D881A1A050D008C7E5E /* ExhibitData.m */; };
+		84BB2D901A1A083B008C7E5E /* ExhibitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D8F1A1A083B008C7E5E /* ExhibitVC.m */; };
+		84BB2D941A1A0F09008C7E5E /* ExhibitCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D931A1A0F09008C7E5E /* ExhibitCollectionViewCell.m */; };
+		84BB2D971A1A1328008C7E5E /* ExhibitCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D961A1A1328008C7E5E /* ExhibitCollectionVC.m */; };
 		84EEC6D81A17886E00E8CF5D /* ChooseFloorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */; };
 		84EEC6E11A18178F00E8CF5D /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EEC6E01A18178F00E8CF5D /* MapVC.m */; };
 		84EEC6E31A1821B300E8CF5D /* control-room-0.2.0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 84EEC6E21A18209900E8CF5D /* control-room-0.2.0.mbtiles */; };
@@ -58,6 +62,14 @@
 		84BB2D821A166A46008C7E5E /* qrReaderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrReaderVC.h; sourceTree = "<group>"; };
 		84BB2D831A166A46008C7E5E /* qrReaderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = qrReaderVC.m; sourceTree = "<group>"; };
 		84BB2D851A16755B008C7E5E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		84BB2D871A1A050D008C7E5E /* ExhibitData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitData.h; sourceTree = "<group>"; };
+		84BB2D881A1A050D008C7E5E /* ExhibitData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitData.m; sourceTree = "<group>"; };
+		84BB2D8E1A1A083B008C7E5E /* ExhibitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitVC.h; sourceTree = "<group>"; };
+		84BB2D8F1A1A083B008C7E5E /* ExhibitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitVC.m; sourceTree = "<group>"; };
+		84BB2D921A1A0F09008C7E5E /* ExhibitCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitCollectionViewCell.h; sourceTree = "<group>"; };
+		84BB2D931A1A0F09008C7E5E /* ExhibitCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitCollectionViewCell.m; sourceTree = "<group>"; };
+		84BB2D951A1A1328008C7E5E /* ExhibitCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitCollectionVC.h; sourceTree = "<group>"; };
+		84BB2D961A1A1328008C7E5E /* ExhibitCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitCollectionVC.m; sourceTree = "<group>"; };
 		84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseFloorVC.h; sourceTree = "<group>"; };
 		84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseFloorVC.m; sourceTree = "<group>"; };
 		84EEC6DF1A18178F00E8CF5D /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
@@ -119,23 +131,9 @@
 		84BB2D511A163DCD008C7E5E /* RusMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				84EEC6DF1A18178F00E8CF5D /* MapVC.h */,
-				84EEC6E01A18178F00E8CF5D /* MapVC.m */,
-				84EEC6E41A1952A300E8CF5D /* MapBoxVC.h */,
-				84EEC6E51A1952A300E8CF5D /* MapBoxVC.m */,
-				84BB2D7B1A164E09008C7E5E /* NavigationButton.h */,
-				84BB2D7C1A164E09008C7E5E /* NavigationButton.m */,
-				84BB2D781A164A0E008C7E5E /* StartVC.h */,
-				84BB2D791A164A0E008C7E5E /* StartVC.m */,
-				84BB2D7F1A1654A9008C7E5E /* ControllersForMenu.h */,
-				84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */,
-				84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */,
-				84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */,
-				84BB2D561A163DCD008C7E5E /* AppDelegate.h */,
-				84BB2D571A163DCD008C7E5E /* AppDelegate.m */,
 				84BB2D5C1A163DCD008C7E5E /* Main.storyboard */,
-				84BB2D821A166A46008C7E5E /* qrReaderVC.h */,
-				84BB2D831A166A46008C7E5E /* qrReaderVC.m */,
+				84BB2D8C1A1A054B008C7E5E /* Controller */,
+				84BB2D8B1A1A051D008C7E5E /* Model */,
 				84BB2D5F1A163DCD008C7E5E /* Images.xcassets */,
 				84BB2D611A163DCD008C7E5E /* LaunchScreen.xib */,
 				84BB2D521A163DCD008C7E5E /* Supporting Files */,
@@ -169,6 +167,60 @@
 				84BB2D6D1A163DCD008C7E5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84BB2D8B1A1A051D008C7E5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84BB2D8D1A1A055E008C7E5E /* Navigation */,
+				84BB2D561A163DCD008C7E5E /* AppDelegate.h */,
+				84BB2D571A163DCD008C7E5E /* AppDelegate.m */,
+				84BB2D871A1A050D008C7E5E /* ExhibitData.h */,
+				84BB2D881A1A050D008C7E5E /* ExhibitData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84BB2D8C1A1A054B008C7E5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84EEC6DF1A18178F00E8CF5D /* MapVC.h */,
+				84EEC6E01A18178F00E8CF5D /* MapVC.m */,
+				84EEC6E41A1952A300E8CF5D /* MapBoxVC.h */,
+				84EEC6E51A1952A300E8CF5D /* MapBoxVC.m */,
+				84BB2D781A164A0E008C7E5E /* StartVC.h */,
+				84BB2D911A1A0B9A008C7E5E /* Exhibit */,
+				84BB2D791A164A0E008C7E5E /* StartVC.m */,
+				84EEC6D61A17886E00E8CF5D /* ChooseFloorVC.h */,
+				84EEC6D71A17886E00E8CF5D /* ChooseFloorVC.m */,
+				84BB2D821A166A46008C7E5E /* qrReaderVC.h */,
+				84BB2D831A166A46008C7E5E /* qrReaderVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84BB2D8D1A1A055E008C7E5E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				84BB2D7B1A164E09008C7E5E /* NavigationButton.h */,
+				84BB2D7C1A164E09008C7E5E /* NavigationButton.m */,
+				84BB2D7F1A1654A9008C7E5E /* ControllersForMenu.h */,
+				84BB2D801A1654A9008C7E5E /* ControllersForMenu.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		84BB2D911A1A0B9A008C7E5E /* Exhibit */ = {
+			isa = PBXGroup;
+			children = (
+				84BB2D8E1A1A083B008C7E5E /* ExhibitVC.h */,
+				84BB2D8F1A1A083B008C7E5E /* ExhibitVC.m */,
+				84BB2D921A1A0F09008C7E5E /* ExhibitCollectionViewCell.h */,
+				84BB2D931A1A0F09008C7E5E /* ExhibitCollectionViewCell.m */,
+				84BB2D951A1A1328008C7E5E /* ExhibitCollectionVC.h */,
+				84BB2D961A1A1328008C7E5E /* ExhibitCollectionVC.m */,
+			);
+			name = Exhibit;
 			sourceTree = "<group>";
 		};
 		A50DC0C6B85DB66EC7AC19E8 /* Frameworks */ = {
@@ -318,13 +370,17 @@
 			files = (
 				84BB2D811A1654A9008C7E5E /* ControllersForMenu.m in Sources */,
 				84EEC6E11A18178F00E8CF5D /* MapVC.m in Sources */,
+				84BB2D941A1A0F09008C7E5E /* ExhibitCollectionViewCell.m in Sources */,
+				84BB2D891A1A050D008C7E5E /* ExhibitData.m in Sources */,
 				84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */,
+				84BB2D971A1A1328008C7E5E /* ExhibitCollectionVC.m in Sources */,
 				84EEC6E61A1952A300E8CF5D /* MapBoxVC.m in Sources */,
 				84BB2D841A166A46008C7E5E /* qrReaderVC.m in Sources */,
 				84BB2D7E1A164E09008C7E5E /* NavigationButton.m in Sources */,
 				84BB2D551A163DCD008C7E5E /* main.m in Sources */,
 				84EEC6D81A17886E00E8CF5D /* ChooseFloorVC.m in Sources */,
 				84BB2D7A1A164A0F008C7E5E /* StartVC.m in Sources */,
+				84BB2D901A1A083B008C7E5E /* ExhibitVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import "MapVC.h"
-
+#import "ExhibitVC.h"
+#import "ExhibitData.h"
 @interface MapVC ()
 
 @end
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)goToExhibit:(UIButton *)sender{
+    NSArray *exhibitList = [ExhibitData getExhibitDataForShowRoom:1];
+    ExhibitVC * exhibitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"exhibitVC"];
+    exhibitVC.exhibitList = exhibitList;
+    [self.navigationController pushViewController:exhibitVC animated:YES];
 }
 
 /*
