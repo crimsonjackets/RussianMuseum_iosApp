@@ -20,12 +20,21 @@
 @property (nonatomic, weak) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, strong) NSDictionary * detailExhibit;
 
+
+//info properties
+@property (nonatomic, weak) IBOutlet UIView *infoView;
+@property (nonatomic, weak) IBOutlet UILabel *infoTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *infoAuthorLabel;
+@property (nonatomic, weak) IBOutlet UITextView *infoTextView;
+@property (nonatomic, weak) IBOutlet UIButton *closeInfoButton;
+
 @end
 
 @implementation ExhibitVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.infoView.hidden = YES;
     // Do any additional setup after loading the view.
     
     // Set up exhibit selection delegate on child view controller
@@ -46,8 +55,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)handleCloseInfoButtonTap:(UIButton *)sender{
+    self.infoView.hidden = YES;
+}
+
 - (IBAction)handleInfoButtonTap:(UIButton *)sender{
     NSLog(@"info button tapped");
+    //showingInfo
+    self.infoTitleLabel.text = self.titleLabel.text;
+    self.infoAuthorLabel.text = self.authorLabel.text;
+    //self.infoTextView.text = [self.detailExhibit objectForKey:@"text"];
+    self.infoView.hidden = NO;
 }
 - (IBAction)handleVideoButtonTap:(UIButton *)sender{
     NSString *filepath   =   [[NSBundle mainBundle] pathForResource:@"video.mp4" ofType:nil];
