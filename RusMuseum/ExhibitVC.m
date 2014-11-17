@@ -35,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.infoView.hidden = YES;
+    [self.infoTextView setContentOffset:CGPointZero];
     // Do any additional setup after loading the view.
     
     // Set up exhibit selection delegate on child view controller
@@ -57,6 +58,7 @@
 
 - (IBAction)handleCloseInfoButtonTap:(UIButton *)sender{
     self.infoView.hidden = YES;
+    [self.infoTextView setContentOffset:CGPointZero];
 }
 
 - (IBAction)handleInfoButtonTap:(UIButton *)sender{
