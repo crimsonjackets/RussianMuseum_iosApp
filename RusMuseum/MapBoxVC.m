@@ -7,7 +7,7 @@
 //
 
 #import "MapBoxVC.h"
-
+#import "MapVC.h"
 @interface MapBoxVC ()
 
 @end
@@ -16,17 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    int currentFloor = ((MapVC *) self.mapBoxVCDelegate).currentFloor;
+    NSLog(@"currentFloor = %d", currentFloor);
     RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"2rooms_f585e0" ofType:@"mbtiles"];
     
-    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource];
+
+    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource ];
+   
     
-    mapView.zoom = 2;
     mapView.delegate = self;
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     mapView.adjustTilesForRetinaDisplay = YES; // these tiles aren't designed specifically for retina, so make them legible
+    mapView.zoom = 1.7f;
+    mapView.centerCoordinate = CLLocationCoordinate2DMake(47, 63);
     
     [self.view addSubview:mapView];
 }

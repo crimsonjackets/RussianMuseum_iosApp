@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapVC : UIViewController 
+@interface MapVC : UIViewController
+
 @property(nonatomic) int currentFloor;
 
 @end

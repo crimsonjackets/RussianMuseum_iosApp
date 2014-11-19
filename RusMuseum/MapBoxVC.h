@@ -19,5 +19,6 @@
 @interface MapBoxVC : UIViewController <RMMapViewDelegate>
 
 @property (nonatomic, weak) id<MabBoxVCDelegate> mapBoxVCDelegate;
+@property (nonatomic) int currentFloor;
 
 @end
