@@ -18,6 +18,7 @@
 @interface ExhibitCollectionVC : UICollectionViewController
 
 @property (nonatomic, strong) NSArray * exhibitList;
+@property (nonatomic) int selectedExhibitIndex;
 @property (nonatomic, weak) id<ExhibitSelectionDelegate> exhibitSelectionDelegate;
 
 @end

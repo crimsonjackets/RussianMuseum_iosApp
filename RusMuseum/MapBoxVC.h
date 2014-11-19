@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mapbox.h"
 
-@interface MapBoxVC : UIViewController
+@protocol MabBoxVCDelegate <NSObject>
+
+@required
+- (void) didTapExhibitWithNumber:(int) exhibitNumber inRoom:(int) roomNumber;
+
+@end
+
+@interface MapBoxVC : UIViewController <RMMapViewDelegate>
+
+@property (nonatomic, weak) id<MabBoxVCDelegate> mapBoxVCDelegate;
 
 @end

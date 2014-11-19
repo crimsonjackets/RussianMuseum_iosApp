@@ -46,9 +46,11 @@
         if([vc respondsToSelector:@selector(setExhibitList:)]) {
             [vc setExhibitList:self.exhibitList];
         }
+        if([vc respondsToSelector:@selector(setSelectedExhibitIndex:)]) {
+            [vc setSelectedExhibitIndex:self.selectedExhibitIndex];
+        }
         
     }];
-    [self updateViewsWithExhibit:self.exhibitList[0]];
 }
 
 - (void)didReceiveMemoryWarning {

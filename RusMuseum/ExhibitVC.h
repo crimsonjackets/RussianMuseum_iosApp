@@ -10,4 +10,5 @@
 
 @interface ExhibitVC : UIViewController
 @property (nonatomic, strong) NSArray *exhibitList;
+@property (nonatomic) int selectedExhibitIndex;
 @end

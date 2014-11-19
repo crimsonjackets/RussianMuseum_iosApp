@@ -10,21 +10,14 @@
 
 @implementation ExhibitData
 +(NSArray *)getExhibitDataForShowRoom:(int) showRoomId{
-    if (showRoomId == 1){
+    if (showRoomId == 34){
         return  @[@{@"title": @"Корабельная роща", @"author": @"И.И.Шишкин", @"info": @"", @"video":@"", @"image_name": @"korabel_roscha"},
                   @{@"title": @"Покорение Сибири Ермаком", @"author": @"В.И.Суриков", @"info": @"", @"video":@"", @"image_name": @"pokorenie"},
-                  @{@"title": @"Переход Суворова через Альпы", @"author": @"В.И.Суриков", @"info": @"", @"video":@"", @"image_name": @"perehod_suvorova"},
-                  @{@"title": @"Взятие снежного городка", @"author": @"В.И.Суриков", @"info": @"", @"video":@"", @"image_name": @"vzyatie"},
-                  @{@"title": @"Бурлаки на Волге", @"author": @"И.Е.Репин", @"info": @"", @"video":@"", @"image_name": @"burlaki"}];
+                  @{@"title": @"Переход Суворова через Альпы", @"author": @"В.И.Суриков", @"info": @"", @"video":@"", @"image_name": @"perehod_suvorova"}];
     }
-    if (showRoomId == 2){
-        return  @[@{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""},
-                  @{@"title": @"", @"author": @"", @"info": @"", @"video":@"", @"image_name": @""}];
+    if (showRoomId == 25){
+        return  @[@{@"title": @"Взятие снежного городка", @"author": @"В.И.Суриков", @"info": @"", @"video":@"", @"image_name": @"vzyatie"},
+                  @{@"title": @"Бурлаки на Волге", @"author": @"И.Е.Репин", @"info": @"", @"video":@"", @"image_name": @"burlaki"}];
     }
     return nil;
 }

@@ -7,7 +7,7 @@
 //
 
 #import "MapBoxVC.h"
-#import "Mapbox.h"
+
 @interface MapBoxVC ()
 
 @end
@@ -17,11 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"control-room-0.2.0" ofType:@"mbtiles"];
+    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"2rooms_f585e0" ofType:@"mbtiles"];
     
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource];
     
     mapView.zoom = 2;
+    mapView.delegate = self;
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
@@ -33,6 +34,35 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)singleTapOnMap:(RMMapView *)mapView at:(CGPoint)point
+{
+    
+    RMMapboxSource *source = (RMMapboxSource *)mapView.tileSource;
+    
+    if ([source conformsToProtocol:@protocol(RMInteractiveSource)] && [source supportsInteractivity])
+    {
+        NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser
+                                                         forPoint:point
+                                                        inMapView:mapView];
+        
+        if (formattedOutput && [formattedOutput length])
+        {
+            if (self.mapBoxVCDelegate){
+                NSLog(@"formattedOutput == %@",formattedOutput);
+                int separatorPosition =  [formattedOutput rangeOfString:@"#"].location;
+                int roomNumber = [[formattedOutput substringToIndex:separatorPosition] intValue];
+                int exhibitNumber = [[formattedOutput substringFromIndex:(separatorPosition + 1)] intValue];
+                [self.mapBoxVCDelegate didTapExhibitWithNumber:exhibitNumber inRoom:roomNumber];
+                
+            }else{
+                NSLog(@"MapBoxVC.delegate is nil");
+            }
+            
+        }
+    }
 }
 
 /*

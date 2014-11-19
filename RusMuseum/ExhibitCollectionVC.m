@@ -18,8 +18,7 @@
 static NSString * const reuseIdentifier = @"ExhibitCell";
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -30,6 +29,14 @@ static NSString * const reuseIdentifier = @"ExhibitCell";
 - (void) viewWillAppear:(BOOL)animated{
     self.currentCellContentTransform = CGAffineTransformIdentity;
     [super viewWillAppear:animated];
+    [self collectionView:self.collectionView didSelectItemAtIndexPath:[NSIndexPath indexPathForItem:self.selectedExhibitIndex inSection:0]];
+}
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:self.selectedExhibitIndex inSection:0]
+                                atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,14 +96,18 @@ static NSString * const reuseIdentifier = @"ExhibitCell";
 
 
 
+
 #pragma mark <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     // Notify the selection delegate that a selection has been made
     if(self.exhibitSelectionDelegate &&
        [self.exhibitSelectionDelegate respondsToSelector:@selector(didSelectExhibit:sender:)]) {
         NSDictionary *selectedExhibit = self.exhibitList[indexPath.item];
         [self.exhibitSelectionDelegate didSelectExhibit:selectedExhibit sender:self];
     }
+    
 }
 
 @end
