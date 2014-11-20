@@ -25,6 +25,9 @@
             [vc setMapBoxVCDelegate:self];
         }
     }];
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,18 +36,15 @@
 }
 - (IBAction)changeFloor:(UIButton *)sender{
     NSLog(@"[MapVC] changeFloor; button tag == %d", (int)sender.tag);
-    [[NSUserDefaults standardUserDefaults] setInteger:sender.tag forKey:@"CurrentFloor"];
-    //changeMap in MapBoxVC
-    [self.childViewControllers enumerateObjectsUsingBlock:^(id vc, NSUInteger idx, BOOL *stop) {
-        if([vc respondsToSelector:@selector(changeMap)]) {
-            [vc changeMap];
-        }
-    }];
-    
-//    NSArray *exhibitList = [ExhibitData getExhibitDataForShowRoom:1];
-//    ExhibitVC * exhibitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"exhibitVC"];
-//    exhibitVC.exhibitList = exhibitList;
-//    [self.navigationController pushViewController:exhibitVC animated:YES];
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"CurrentFloor"] != sender.tag){
+        [[NSUserDefaults standardUserDefaults] setInteger:sender.tag forKey:@"CurrentFloor"];
+        //changeMap in MapBoxVC
+        [self.childViewControllers enumerateObjectsUsingBlock:^(id vc, NSUInteger idx, BOOL *stop) {
+            if([vc respondsToSelector:@selector(changeMap)]) {
+                [vc changeMap];
+            }
+        }];
+    }
 }
 
 
@@ -57,6 +57,9 @@
     exhibitVC.selectedExhibitIndex = exhibitNumber;
     [self.navigationController pushViewController:exhibitVC animated:YES];
 }
+
+
+
 /*
 #pragma mark - Navigation
 

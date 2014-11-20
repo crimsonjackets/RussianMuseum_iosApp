@@ -26,6 +26,9 @@
                                 <state key="normal" backgroundImage="Logo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8qe-Wd-MQ2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYx-ax-yzP" userLabel="Menu Button" customClass="NavigationButton">
                                 <rect key="frame" x="449" y="440" width="111" height="120"/>
@@ -422,7 +425,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMq-CI-5js" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="1967"/>
+            <point key="canvasLocation" x="2196" y="1747"/>
         </scene>
         <!--SponsorVC-->
         <scene sceneID="uNM-y1-qGf">

@@ -9,7 +9,7 @@
 #import "StartVC.h"
 #import "NavigationButton.h"
 #import "ControllersForMenu.h"
-
+#import <MediaPlayer/MediaPlayer.h>
 @interface StartVC ()
 
 @property (nonatomic, strong) IBOutlet UIImageView * backgroundImageView;
@@ -24,6 +24,12 @@
     [super viewDidLoad];
     //setting main navigation controller;
     [MenuControllers setNavigationController:self.navigationController];
+    
+    //enable pop gesture;
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
     // Do any additional setup after loading the view.
 }
 
@@ -32,6 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(IBAction)playVideo:(UIButton *)sender{
+    NSString *filepath   =   [[NSBundle mainBundle] pathForResource:@"video.mp4" ofType:nil];
+    NSURL *movieURL = [NSURL fileURLWithPath:filepath];
+    MPMoviePlayerViewController *movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    [self presentMoviePlayerViewControllerAnimated:movieController];
+    [movieController.moviePlayer play];
+
+}
 /*
 #pragma mark - Navigation
 

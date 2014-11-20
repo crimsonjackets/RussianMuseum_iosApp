@@ -39,9 +39,15 @@
     
     mapView.adjustTilesForRetinaDisplay = YES; // these tiles aren't designed specifically for retina, so make them legible
     mapView.zoom = 1.7f;
-    mapView.centerCoordinate = CLLocationCoordinate2DMake(47, 63);
+    mapView.centerCoordinate = CLLocationCoordinate2DMake(30, 30);
     
     [self.view addSubview:mapView];
+    
+    
+}
+- (void) viewWillAppear:(BOOL)animated{
+    //little hack to center the map correctly;
+    [self changeMap];
 }
 
 - (void)didReceiveMemoryWarning {
