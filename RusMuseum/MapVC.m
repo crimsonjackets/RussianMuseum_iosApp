@@ -16,6 +16,7 @@
 
 @implementation MapVC
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,7 +31,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)goToExhibit:(UIButton *)sender{
+- (IBAction)changeFloor:(UIButton *)sender{
+    NSLog(@"[MapVC] changeFloor; button tag == %d", (int)sender.tag);
+    [[NSUserDefaults standardUserDefaults] setInteger:sender.tag forKey:@"CurrentFloor"];
+    //changeMap in MapBoxVC
+    [self.childViewControllers enumerateObjectsUsingBlock:^(id vc, NSUInteger idx, BOOL *stop) {
+        if([vc respondsToSelector:@selector(changeMap)]) {
+            [vc changeMap];
+        }
+    }];
+    
 //    NSArray *exhibitList = [ExhibitData getExhibitDataForShowRoom:1];
 //    ExhibitVC * exhibitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"exhibitVC"];
 //    exhibitVC.exhibitList = exhibitList;

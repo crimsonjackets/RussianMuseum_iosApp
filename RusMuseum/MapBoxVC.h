@@ -21,4 +21,6 @@
 @property (nonatomic, weak) id<MabBoxVCDelegate> mapBoxVCDelegate;
 @property (nonatomic) int currentFloor;
 
+- (void) changeMap;
+
 @end

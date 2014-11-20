@@ -8,8 +8,9 @@
 
 #import "MapBoxVC.h"
 #import "MapVC.h"
-@interface MapBoxVC ()
-
+@interface MapBoxVC (){
+    RMMapView *mapView;
+}
 @end
 
 @implementation MapBoxVC
@@ -17,12 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    int currentFloor = ((MapVC *) self.mapBoxVCDelegate).currentFloor;
+    int currentFloor = (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"CurrentFloor"];
     NSLog(@"currentFloor = %d", currentFloor);
-    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:@"2rooms_f585e0" ofType:@"mbtiles"];
+    NSString * tileSource = @"2rooms_f585e0";
+    if (currentFloor == 1){
+        tileSource = @"control-room-0.2.0";
+    }
+    if (currentFloor == 2){
+        tileSource = @"2rooms_f585e0";
+    }
+    RMMBTilesSource *offlineSource = [[RMMBTilesSource alloc] initWithTileSetResource:tileSource ofType:@"mbtiles"];
     
 
-    RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource ];
+    mapView = [[RMMapView alloc] initWithFrame:self.view.bounds andTilesource:offlineSource ];
    
     
     mapView.delegate = self;
@@ -69,7 +77,11 @@
         }
     }
 }
-
+- (void) changeMap{
+    [mapView removeFromSuperview];
+    mapView = nil;
+    [self viewDidLoad];
+}
 /*
 #pragma mark - Navigation
 

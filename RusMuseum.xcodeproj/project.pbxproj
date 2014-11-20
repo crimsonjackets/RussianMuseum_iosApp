@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		79E858876E778BCB5A8ADBB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4255EEE610DF79FFD7BB09 /* libPods.a */; };
-		845035831A1CC01C00FC1C12 /* imageTest.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 845035821A1CC01C00FC1C12 /* imageTest.mbtiles */; };
 		8450358B1A1CEAC800FC1C12 /* 2rooms_f585e0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 8450358A1A1CEAC800FC1C12 /* 2rooms_f585e0.mbtiles */; };
+		845035901A1E14C900FC1C12 /* control-room-0.2.0.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 8450358F1A1E14C900FC1C12 /* control-room-0.2.0.mbtiles */; };
 		84BB2D551A163DCD008C7E5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D541A163DCD008C7E5E /* main.m */; };
 		84BB2D581A163DCD008C7E5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB2D571A163DCD008C7E5E /* AppDelegate.m */; };
 		84BB2D5E1A163DCD008C7E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB2D5C1A163DCD008C7E5E /* Main.storyboard */; };
@@ -43,8 +43,8 @@
 /* Begin PBXFileReference section */
 		2FFF6F38E00A9EDF0F387429 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7E4255EEE610DF79FFD7BB09 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		845035821A1CC01C00FC1C12 /* imageTest.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = imageTest.mbtiles; sourceTree = "<group>"; };
 		8450358A1A1CEAC800FC1C12 /* 2rooms_f585e0.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2rooms_f585e0.mbtiles; sourceTree = "<group>"; };
+		8450358F1A1E14C900FC1C12 /* control-room-0.2.0.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "control-room-0.2.0.mbtiles"; sourceTree = "<group>"; };
 		84BB2D4F1A163DCD008C7E5E /* RusMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RusMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB2D531A163DCD008C7E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BB2D541A163DCD008C7E5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,8 +146,8 @@
 		84BB2D521A163DCD008C7E5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8450358F1A1E14C900FC1C12 /* control-room-0.2.0.mbtiles */,
 				8450358A1A1CEAC800FC1C12 /* 2rooms_f585e0.mbtiles */,
-				845035821A1CC01C00FC1C12 /* imageTest.mbtiles */,
 				84BB2D851A16755B008C7E5E /* video.mp4 */,
 				84BB2D531A163DCD008C7E5E /* Info.plist */,
 				84BB2D541A163DCD008C7E5E /* main.m */,
@@ -319,9 +319,9 @@
 			files = (
 				84BB2D5E1A163DCD008C7E5E /* Main.storyboard in Resources */,
 				84BB2D631A163DCD008C7E5E /* LaunchScreen.xib in Resources */,
-				845035831A1CC01C00FC1C12 /* imageTest.mbtiles in Resources */,
 				84BB2D601A163DCD008C7E5E /* Images.xcassets in Resources */,
 				84BB2D861A16755B008C7E5E /* video.mp4 in Resources */,
+				845035901A1E14C900FC1C12 /* control-room-0.2.0.mbtiles in Resources */,
 				8450358B1A1CEAC800FC1C12 /* 2rooms_f585e0.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

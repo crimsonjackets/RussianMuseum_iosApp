@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"CurrentFloor"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,10 +26,11 @@
 }
 -(IBAction)goToMap:(UIButton *) sender{
     NSLog(@"button tag = %ld", sender.tag);
+    [[NSUserDefaults standardUserDefaults] setInteger:sender.tag forKey:@"CurrentFloor"];
     MapVC * mapVC = [self.storyboard instantiateViewControllerWithIdentifier:@"mapVC"];
-    mapVC.currentFloor = (int)sender.tag;
     [self.navigationController pushViewController:mapVC animated:YES];
 }
+
 /*
 #pragma mark - Navigation
 

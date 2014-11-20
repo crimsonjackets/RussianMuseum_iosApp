@@ -91,20 +91,26 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToExhibit:" destination="9PT-0C-5fw" eventType="touchUpInside" id="P80-bA-K8b"/>
+                                    <action selector="changeFloor:" destination="9PT-0C-5fw" eventType="touchUpInside" id="NgU-q5-eHt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12X-91-pWN" userLabel="2Floor">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12X-91-pWN" userLabel="2Floor">
                                 <rect key="frame" x="361" y="60" width="61" height="62"/>
                                 <state key="normal" image="2FloorButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeFloor:" destination="9PT-0C-5fw" eventType="touchUpInside" id="Zf9-fx-3x3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5W-49-wCf" userLabel="1Floor">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5W-49-wCf" userLabel="1Floor">
                                 <rect key="frame" x="270" y="60" width="61" height="62"/>
                                 <state key="normal" image="1FloorButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeFloor:" destination="9PT-0C-5fw" eventType="touchUpInside" id="0dJ-dP-kxd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

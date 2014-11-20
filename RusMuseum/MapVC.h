@@ -10,6 +10,5 @@
 
 @interface MapVC : UIViewController
 
-@property(nonatomic) int currentFloor;
 
 @end
