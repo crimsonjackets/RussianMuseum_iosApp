@@ -19,6 +19,11 @@
     // Do any additional setup after loading the view.
     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"CurrentFloor"];
 }
+- (void) viewDidAppear:(BOOL)animated{
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

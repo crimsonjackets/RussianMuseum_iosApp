@@ -29,6 +29,8 @@
     return _sharedObject;
 }
 
+
+
 -(void) goStartVC{
     if (self.navigationController){
         if ([self.navigationController topViewController] != self.startVC){

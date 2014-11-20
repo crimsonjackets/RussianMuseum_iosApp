@@ -17,6 +17,15 @@
 @implementation MapVC
 
 
+- (void)viewDidAppear:(BOOL)animated{
+    //enable pop gesture;
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

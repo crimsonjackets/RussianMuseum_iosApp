@@ -25,12 +25,14 @@
     //setting main navigation controller;
     [MenuControllers setNavigationController:self.navigationController];
     
-    //enable pop gesture;
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
-    }
+
     // Do any additional setup after loading the view.
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

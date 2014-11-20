@@ -28,6 +28,13 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [_session startRunning];
+
+    
+}
+-(void)viewDidAppear:(BOOL)animated{
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [_session stopRunning];
